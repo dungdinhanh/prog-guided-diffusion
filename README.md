@@ -43,7 +43,7 @@ For these examples, we will generate 100 samples with batch size 4. Feel free to
 SAMPLE_FLAGS="--batch_size 4 --num_samples 100 --timestep_respacing 250"
 ```
 
-## Classifier guidance
+## Progressive guidance
 
 Note for these sampling runs that you can set `--classifier_scale 0` to sample from the base diffusion model.
 You may also use the `image_sample.py` script instead of `classifier_sample.py` in that case.
