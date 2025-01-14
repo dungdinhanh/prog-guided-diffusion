@@ -6,10 +6,8 @@ This repository is based on [openai/guided-diffusion](https://github.com/openai/
 
 # Download pre-trained models
 
-We have released checkpoints for the main models in the paper. Before using these models, please review the corresponding [model card](model-card.md) to understand the intended use and limitations of these models.
-
-Here are the download links for each model checkpoint:
-
+The links for checkpoints are from openai/guided-diffusion:
+ * 64x64 unconditional diffuion [64x64_diffusion_unc.pt](https://unisyd-my.sharepoint.com/:u:/g/personal/anh-dung_dinh_sydney_edu_au/ETEMJ7lqxZRAvtFQ6noOLbIBnQWfQTJd0ZA84022gSYQJw?e=uQqkU4)
  * 64x64 classifier: [64x64_classifier.pt](https://openaipublic.blob.core.windows.net/diffusion/jul-2021/64x64_classifier.pt)
  * 64x64 diffusion: [64x64_diffusion.pt](https://openaipublic.blob.core.windows.net/diffusion/jul-2021/64x64_diffusion.pt)
  * 128x128 classifier: [128x128_classifier.pt](https://openaipublic.blob.core.windows.net/diffusion/jul-2021/128x128_classifier.pt)
@@ -25,6 +23,10 @@ Here are the download links for each model checkpoint:
  * LSUN cat: [lsun_cat.pt](https://openaipublic.blob.core.windows.net/diffusion/jul-2021/lsun_cat.pt)
  * LSUN horse: [lsun_horse.pt](https://openaipublic.blob.core.windows.net/diffusion/jul-2021/lsun_horse.pt)
  * LSUN horse (no dropout): [lsun_horse_nodropout.pt](https://openaipublic.blob.core.windows.net/diffusion/jul-2021/lsun_horse_nodropout.pt)
+
+ # Download similarity matrix:
+
+W2V similarity matrix: [IM_ls_w2v.npz](https://unisyd-my.sharepoint.com/:u:/g/personal/anh-dung_dinh_sydney_edu_au/EZaRdW8DX_lLvQh-pYuEGB4B2xew7fI2mznqRlkaljWZPw?e=l6jnrt)
 
 # Sampling from pre-trained models
 
@@ -78,7 +80,7 @@ MODEL_FLAGS="--attention_resolutions 32,16,8 --class_cond True --diffusion_steps
 python classifier_sample.py $MODEL_FLAGS --classifier_scale 4.0 --classifier_path models/512x512_classifier.pt --model_path models/512x512_diffusion.pt $SAMPLE_FLAGS
 ```
 
-## Upsampling
+<!-- ## Upsampling
 
 For these runs, we assume you have some base samples in a file `64_samples.npz` or `128_samples.npz` for the two respective models.
 
@@ -173,4 +175,4 @@ mpiexec -n N python scripts/classifier_free_sample.py \
     $MODEL_FLAGS $CLASSIFIER_FLAGS $SAMPLE_FLAGS
 ```
 
-To sample for 250 timesteps without DDIM, replace `--timestep_respacing ddim25` to `--timestep_respacing 250`, and replace `--use_ddim True` with `--use_ddim False`.
+To sample for 250 timesteps without DDIM, replace `--timestep_respacing ddim25` to `--timestep_respacing 250`, and replace `--use_ddim True` with `--use_ddim False`. -->
