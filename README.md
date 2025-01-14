@@ -56,7 +56,7 @@ You may also use the `image_sample.py` script instead of `classifier_sample.py` 
 
 ```
 MODEL_FLAGS="--attention_resolutions 32,16,8 --class_cond True --diffusion_steps 1000 --dropout 0.1 --image_size 64 --learn_sigma True --noise_schedule cosine --num_channels 192 --num_head_channels 64 --num_res_blocks 3 --resblock_updown True --use_new_attention_order True --use_fp16 True --use_scale_shift_norm True --lsim_path models/IM_ls_w2v.npz --eps 0.96"
-python classifier_sample.py $MODEL_FLAGS --classifier_scale 0.3 --classifier_path models/64x64_classifier.pt --classifier_depth 4 --model_path models/64x64_diffusion.pt $SAMPLE_FLAGS
+python scripts_gdiff/robust_gdiff/classifier_sample_eds_lsim_sch_conf.py $MODEL_FLAGS --classifier_scale 0.3 --classifier_path models/64x64_classifier.pt --classifier_depth 4 --model_path models/64x64_diffusion.pt $SAMPLE_FLAGS
 ```
 
 
@@ -64,7 +64,7 @@ python classifier_sample.py $MODEL_FLAGS --classifier_scale 0.3 --classifier_pat
 
 ```
 MODEL_FLAGS="--attention_resolutions 32,16,8 --class_cond True --diffusion_steps 1000 --dropout 0.1 --image_size 64 --learn_sigma True --noise_schedule cosine --num_channels 192 --num_head_channels 64 --num_res_blocks 3 --resblock_updown True --use_new_attention_order True --use_fp16 True --use_scale_shift_norm True --lsim_path models/IM_ls_w2v.npz --eps 0.96"
-python classifier_sample.py $MODEL_FLAGS --classifier_scale 8.0 --classifier_path models/64x64_classifier.pt --classifier_depth 4 --model_path models/64x64_diffusion.pt $SAMPLE_FLAGS
+python scripts_gdiff/robust_gdiff/classifier_sample_eds_lsim_sch_conf.pyy $MODEL_FLAGS --classifier_scale 8.0 --classifier_path models/64x64_classifier.pt --classifier_depth 4 --model_path models/64x64_diffusion.pt $SAMPLE_FLAGS
 ```
 
 
