@@ -1,4 +1,4 @@
-# guided-diffusion
+# prog-guided-diffusion
 
 This is the codebase for [Rethinking Conditional Diffusion Sampling with Progressive Guidance](https://openreview.net/pdf?id=gThGBHhqcU).
 
