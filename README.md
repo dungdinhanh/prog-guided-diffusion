@@ -30,7 +30,8 @@ The links for checkpoints are from openai/guided-diffusion:
 
  # Download similarity matrix:
 
-W2V similarity matrix: [IM_ls_w2v.npz](https://unisyd-my.sharepoint.com/:u:/g/personal/anh-dung_dinh_sydney_edu_au/EZaRdW8DX_lLvQh-pYuEGB4B2xew7fI2mznqRlkaljWZPw?e=l6jnrt)
+* W2V similarity matrix: [IM_ls_w2v.npz](https://unisyd-my.sharepoint.com/:u:/g/personal/anh-dung_dinh_sydney_edu_au/EZaRdW8DX_lLvQh-pYuEGB4B2xew7fI2mznqRlkaljWZPw?e=l6jnrt)
+* CLIP similarity matrix: [IM_ls_clip.npz](https://unisyd-my.sharepoint.com/:u:/g/personal/anh-dung_dinh_sydney_edu_au/ERjUvTileklLl8XUf9qcgPcBjrRcs4QpJx40TE2-wkiuJQ?e=uSlqyB)
 
 # Sampling from pre-trained models
 
