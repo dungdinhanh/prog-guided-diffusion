@@ -4,6 +4,10 @@ This is the codebase for [Rethinking Conditional Diffusion Sampling with Progres
 
 This repository is based on [openai/guided-diffusion](https://github.com/openai/improved-diffusion), with modifications for progressive guidance
 
+# Setup:
+
+`bash install_requirements.sh`
+
 # Download pre-trained models
 
 The links for checkpoints are from openai/guided-diffusion:
